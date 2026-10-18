@@ -44,9 +44,11 @@ speech.cppの推論には実機iPhoneが必要です。Simulatorでは画面を�
 ## 操作動画とスクリーンショット
 
 Core MLとspeech.cpp / Metalの音声生成・試聴、耳ボタンからの音声認識を紹介しています。
-[操作動画（MP4・約46秒・音声あり）](docs/media/irodori-demo-ja.mp4)
+約46秒・音声付きです。再生ボタンを押し、音声を聴く場合はプレイヤーのミュートを解除してください。
 
-[<img src="docs/media/demo-poster.jpg" width="240" alt="Irodori TTSの操作動画">](docs/media/irodori-demo-ja.mp4)
+https://github.com/user-attachments/assets/85402c9b-d4df-4186-8496-d47dbe176d64
+
+[MP4を開く・ダウンロード](docs/media/irodori-demo-ja.mp4)
 
 | Core ML・軽量INT8 | speech.cpp / Metal | 音声認識・greedy |
 | --- | --- | --- |

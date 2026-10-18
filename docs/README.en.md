@@ -40,9 +40,11 @@ speech.cpp inference requires a physical iPhone; Simulator supports UI inspectio
 ## Video and screenshots
 
 See Core ML and speech.cpp / Metal synthesis and playback, followed by microphone recognition from the ear button.
-[Demo video (MP4, about 46 seconds, Japanese captions and generated speech)](media/irodori-demo-ja.mp4)
+The video is about 46 seconds long, with Japanese captions and generated speech. Press Play and unmute the player to hear the audio.
 
-[<img src="media/demo-poster.jpg" width="240" alt="Irodori TTS demo video">](media/irodori-demo-ja.mp4)
+https://github.com/user-attachments/assets/85402c9b-d4df-4186-8496-d47dbe176d64
+
+[Open or download the MP4](media/irodori-demo-ja.mp4)
 
 | Core ML · light INT8 | speech.cpp / Metal | Recognition · greedy |
 | --- | --- | --- |
