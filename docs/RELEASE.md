@@ -12,8 +12,8 @@
 | Core ML iPhone / Macサンプル | `Examples/IrodoriSamples.xcodeproj` |
 | モデル変換・評価ツール | `Conversion/`、`Benchmarks/` |
 
-[CoreML版リポジトリ](https://github.com/Corvelis/irodori-tts-coreml)のExact Version `0.2.0` から取得する `IrodoriTTS` はCore ML SDKです。
-speech.cppと共通の追加計測APIを使う場合は、このリポジトリ一式のローカルパッケージを使用します。
+`IrodoriTTS` は `https://github.com/Corvelis/irodori-tts-iphone.git` のExact Version `0.3.0`、またはリポジトリルートのローカル追加で使用できます。
+speech.cppを併用する場合は、リポジトリ一式を取得し、ルートと `Packages/IrodoriSpeechCpp` を同じソースからローカル追加します。
 プロジェクトZIPにはビルド済みspeech.cppライブラリを含み、Xcodeが自動展開します。モデル重み、音声、署名情報は含めません。
 
 ## モデル

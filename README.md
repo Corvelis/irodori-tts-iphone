@@ -68,7 +68,7 @@ Core MLサンプルはルートのSDKだけを使用します。CMake / Ninja / 
 
 | Swift Package / product | 機能 | 追加方法 |
 | --- | --- | --- |
-| `IrodoriTTS` | Core ML音声合成、AudioSeal、モデル取得、時間・RAM計測、排他モデル管理 | ルートをローカル追加。公開済みCore ML SDKは[CoreML版リポジトリ](https://github.com/Corvelis/irodori-tts-coreml)のExact Version `0.2.0`からも追加可能 |
+| `IrodoriTTS` | Core ML音声合成、AudioSeal、モデル取得、時間・RAM計測、排他モデル管理 | `https://github.com/Corvelis/irodori-tts-iphone.git` のExact Version `0.3.0`、またはリポジトリルートをローカル追加 |
 | `IrodoriSpeechCpp` | Metal音声合成、ReazonSpeech Q4_K音声認識 | リポジトリ一式を取得し、`Packages/IrodoriSpeechCpp` をローカル追加。ライブラリは同梱 |
 
 speech.cppパッケージはルートの `IrodoriTTS` を共通部品として参照します。リポジトリの階層を維持してください。

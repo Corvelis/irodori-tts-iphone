@@ -62,7 +62,7 @@ Choose **IrodoriiOS** for iPhone or **IrodoriMac** for Mac. These samples use on
 
 | Swift package / product | Features | Integration |
 | --- | --- | --- |
-| `IrodoriTTS` | Core ML TTS, AudioSeal, model downloads, timing/RAM utilities and exclusive model sessions | Add the repository root as a local package. Published Core ML SDK 0.2.0 is also available from the [CoreML repository](https://github.com/Corvelis/irodori-tts-coreml) with Exact Version 0.2.0. |
+| `IrodoriTTS` | Core ML TTS, AudioSeal, model downloads, timing/RAM utilities and exclusive model sessions | Use `https://github.com/Corvelis/irodori-tts-iphone.git` with Exact Version 0.3.0, or add the repository root as a local package. |
 | `IrodoriSpeechCpp` | Metal TTS and ReazonSpeech Q4_K recognition | Add `Packages/IrodoriSpeechCpp` as a local package from the complete repository. The runtime is included; keep the repository layout. |
 
 The speech.cpp package depends on the root `IrodoriTTS` package for shared types and AudioSeal. See [integration steps](GETTING_STARTED.md), [Core ML/shared APIs](API.md) and [speech.cpp APIs](../Packages/IrodoriSpeechCpp/README.md).

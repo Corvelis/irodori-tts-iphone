@@ -4,7 +4,7 @@
 
 ルートの `IrodoriTTS` productのAPIです。[実装](../Sources/IrodoriTTS)に対応します。
 speech.cpp TTS・音声認識は別productの [IrodoriSpeechCpp API](../Packages/IrodoriSpeechCpp/README.md)を参照してください。
-seed・RAM・排他管理の追加APIはこのソースのローカルパッケージで利用できます。GitHubの0.2.0を使う場合は[同じタグのAPI](https://github.com/Corvelis/irodori-tts-coreml/blob/v0.2.0/docs/API.md)を参照してください。
+seed指定・RAM計測・排他モデル管理を含むSDK 0.3.0のAPIです。
 
 ## IrodoriEngine
 

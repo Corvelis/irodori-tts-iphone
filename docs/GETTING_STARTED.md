@@ -14,10 +14,9 @@ Core MLの軽量INT8版にはiOS 18 / macOS 15以降が必要です。
 
 ## Core ML SDKを追加する
 
-取得したソースを使用する場合は、Xcodeの **File → Add Package Dependencies… → Add Local…** でリポジトリルートを選び、アプリtargetへ **IrodoriTTS** productを追加します。
+Xcodeの **File → Add Package Dependencies…** で `https://github.com/Corvelis/irodori-tts-iphone.git` を入力し、**Exact Version 0.3.0** と **IrodoriTTS** productを選びます。
 
-公開済みCore ML SDKを使う場合は、同じ画面で `https://github.com/Corvelis/irodori-tts-coreml.git` を入力し、**Exact Version 0.2.0** と **IrodoriTTS** productを選びます。
-この版はCore ML向けです。seed指定・RAM計測・排他モデル管理の追加APIを使う場合は、このソースのローカルパッケージを使用します。
+取得したソースを使用する場合は、同じ画面の **Add Local…** でリポジトリルートを選び、アプリtargetへ **IrodoriTTS** productを追加します。
 
 モデルは[取得ガイド](HUGGINGFACE.md)から一式を取得するか、SDKで取得します。`models` にはモデル一式の親フォルダを指定します。
 
