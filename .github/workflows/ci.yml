@@ -1,0 +1,51 @@
+name: Source checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  coreml:
+    runs-on: xcode-27
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify selected toolchain
+        run: |
+          xcodebuild -version
+          xcodebuild -version | head -n 1 | grep -Eq '^Xcode 27([.]|$)'
+          bash Scripts/setup.sh --coreml --check
+      - name: Swift tests (model tests require opt-in assets)
+        run: swift test -c release
+      - name: Distribution and project checks
+        run: python3 -m unittest discover -s Scripts/tests
+      - name: Python syntax
+        run: python3 -m compileall -q Conversion Scripts Packages/IrodoriSpeechCpp/Scripts
+      - name: Core ML Mac sample without optional runtime
+        run: xcodebuild -project Examples/IrodoriSamples.xcodeproj -scheme IrodoriMac -configuration Release -destination 'platform=macOS' CODE_SIGNING_ALLOWED=NO build
+      - name: Core ML iPhone sample without optional runtime
+        run: xcodebuild -project Examples/IrodoriSamples.xcodeproj -scheme IrodoriiOS -configuration Release -destination 'generic/platform=iOS' CODE_SIGNING_ALLOWED=NO build
+  comparison:
+    runs-on: xcode-27
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify selected toolchain
+        run: |
+          xcodebuild -version
+          xcodebuild -version | head -n 1 | grep -Eq '^Xcode 27([.]|$)'
+      - name: Verify bundled runtime (no source bootstrap)
+        run: python3 Scripts/package_speech_runtime.py --verify
+      - name: iPhone comparison app
+        run: xcodebuild -project Examples/IrodoriComparison.xcodeproj -scheme IrodoriiOS -configuration Release -destination 'generic/platform=iOS' CODE_SIGNING_ALLOWED=NO build
+      - name: arm64 Simulator UI
+        run: xcodebuild -project Examples/IrodoriComparison.xcodeproj -scheme IrodoriiOS -configuration Release -destination 'generic/platform=iOS Simulator' ARCHS=arm64 CODE_SIGNING_ALLOWED=NO build
+      - name: Release-optimized diagnostic configuration
+        run: xcodebuild -project Examples/IrodoriComparison.xcodeproj -scheme IrodoriiOS-Diagnostics -configuration Diagnostics -destination 'generic/platform=iOS' CODE_SIGNING_ALLOWED=NO build
+  runtime-source:
+    runs-on: xcode-27
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild pinned runtime and package
+        run: bash Scripts/setup.sh --comparison --build-runtime
+      - name: Verify rebuilt archive
+        run: python3 Scripts/package_speech_runtime.py --verify

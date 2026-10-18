@@ -1,0 +1,46 @@
+.build/
+.swiftpm/
+.DS_Store
+DerivedData/
+xcuserdata/
+*.xcuserstate
+Models/
+models/
+artifacts/
+dist/
+.venv/
+__pycache__/
+*.pyc
+*.wav
+*.pcm
+*.f32
+*.mlpackage/
+*.mlmodelc/
+*.safetensors
+*.onnx
+*.pth
+*.gguf
+*.ipa
+*.app/
+.env
+.env.*
+
+# Reproducibly built optional speech.cpp runtime
+*.xcframework/
+
+# Local signing material
+*.p8
+*.p12
+*.pem
+*.key
+*.mobileprovision
+
+# Developer Ruby environment
+.bundle/
+vendor/bundle/
+
+# Compressed runtime distributed with the Xcode project
+!Packages/IrodoriSpeechCpp/Artifacts/
+Packages/IrodoriSpeechCpp/Artifacts/*
+!Packages/IrodoriSpeechCpp/Artifacts/SpeechCpp.xcframework.zip
+!Packages/IrodoriSpeechCpp/Artifacts/runtime.json

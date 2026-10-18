@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D7A36FF79F6F019D01E14762D7C9775 /* RecognitionPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8BFF652AE77F3220674886AB9C858 /* RecognitionPanel.swift */; };
+		573A18EA02243E24EB00836C8747A138 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131A4C2424864D37C7EEE2EC0352C447 /* SampleApp.swift */; };
+		67EE07E289677BB3CB097AE327225F47 /* PCMPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342B4E8603A298E1D109584ECD9B5E67 /* PCMPlayer.swift */; };
+		6D372F38031319F5010C14472A379068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6211B4E0CBFA972ECB9045F934059769 /* Assets.xcassets */; };
+		6FCF9AAA90433DFFBCDCFCA1FDB73B7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92647D66039E4D8869D61DF8B76156 /* ContentView.swift */; };
+		7526BC251F894FEA80052EAE11900C2E /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A47D58DA55098CA884F92CEB072DE4B /* SampleModel.swift */; };
+		8D376089C811372E4E4D5633451F2B3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC30E9274BE6C7D75D721688D8966A46 /* Foundation.framework */; };
+		923EE49DD3D8805CDA0E569746D5CB88 /* SampleRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E47278F46F217C5440905823E39F22 /* SampleRecognition.swift */; };
+		A5577D3346EF890FC485E5EE5A64591A /* ComparisonSmoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FB62D1C6F19350074F7B14019C0911 /* ComparisonSmoke.swift */; };
+		B1B664B0F62865C9E7BD2CA392370B2D /* SynthesisTrial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C44A45B445EEB80AE882FD68768C18B /* SynthesisTrial.swift */; };
+		CCD9F559F003E503E3F185CE54A50564 /* IrodoriTTS in Frameworks */ = {isa = PBXBuildFile; productRef = 94BE968DF4807ADBDADAFA50D523191D /* IrodoriTTS */; };
+		E8257A15BE82364D486712BD8AB94C70 /* IrodoriSpeechCpp in Frameworks */ = {isa = PBXBuildFile; productRef = CF5B1202FB398794A6C531F31F975EE0 /* IrodoriSpeechCpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03B8BFF652AE77F3220674886AB9C858 /* RecognitionPanel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RecognitionPanel.swift; sourceTree = "<group>"; };
+		131A4C2424864D37C7EEE2EC0352C447 /* SampleApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
+		342B4E8603A298E1D109584ECD9B5E67 /* PCMPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PCMPlayer.swift; sourceTree = "<group>"; };
+		5A47D58DA55098CA884F92CEB072DE4B /* SampleModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
+		5C44A45B445EEB80AE882FD68768C18B /* SynthesisTrial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SynthesisTrial.swift; sourceTree = "<group>"; };
+		6211B4E0CBFA972ECB9045F934059769 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C92647D66039E4D8869D61DF8B76156 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		96E47278F46F217C5440905823E39F22 /* SampleRecognition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SampleRecognition.swift; sourceTree = "<group>"; };
+		996F8BC73ED902D17C6EB65342A21592 /* IrodoriiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrodoriiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FB62D1C6F19350074F7B14019C0911 /* ComparisonSmoke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ComparisonSmoke.swift; sourceTree = "<group>"; };
+		FC30E9274BE6C7D75D721688D8966A46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CDCB8A8084C3101766B9186DC8EEC37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D376089C811372E4E4D5633451F2B3C /* Foundation.framework in Frameworks */,
+				CCD9F559F003E503E3F185CE54A50564 /* IrodoriTTS in Frameworks */,
+				E8257A15BE82364D486712BD8AB94C70 /* IrodoriSpeechCpp in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BEDC80A84E7FB73EBE9C660858EF75D = {
+			isa = PBXGroup;
+			children = (
+				F624B85B0E71D0AB35A02BD1C71675FA /* Products */,
+				7653FF23541A0C914130F646D07A4764 /* Frameworks */,
+				E95044A4C3569C4FDB97F256E0D82239 /* Shared */,
+				633FEBBED168621DF2A6BE18FF80B96D /* Diagnostics */,
+			);
+			sourceTree = "<group>";
+		};
+		633FEBBED168621DF2A6BE18FF80B96D /* Diagnostics */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB62D1C6F19350074F7B14019C0911 /* ComparisonSmoke.swift */,
+			);
+			name = Diagnostics;
+			path = Diagnostics;
+			sourceTree = "<group>";
+		};
+		7653FF23541A0C914130F646D07A4764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9858DA6872E1DF501080C59B25814BBC /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9858DA6872E1DF501080C59B25814BBC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FC30E9274BE6C7D75D721688D8966A46 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E95044A4C3569C4FDB97F256E0D82239 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8C92647D66039E4D8869D61DF8B76156 /* ContentView.swift */,
+				342B4E8603A298E1D109584ECD9B5E67 /* PCMPlayer.swift */,
+				03B8BFF652AE77F3220674886AB9C858 /* RecognitionPanel.swift */,
+				131A4C2424864D37C7EEE2EC0352C447 /* SampleApp.swift */,
+				5A47D58DA55098CA884F92CEB072DE4B /* SampleModel.swift */,
+				96E47278F46F217C5440905823E39F22 /* SampleRecognition.swift */,
+				5C44A45B445EEB80AE882FD68768C18B /* SynthesisTrial.swift */,
+				6211B4E0CBFA972ECB9045F934059769 /* Assets.xcassets */,
+			);
+			name = Shared;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F624B85B0E71D0AB35A02BD1C71675FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				996F8BC73ED902D17C6EB65342A21592 /* IrodoriiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FC9D7E8B5ECECF29FF9D9366B0F5DA6 /* IrodoriiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F3FDCCECAE6579922D3AA3115B0A51 /* Build configuration list for PBXNativeTarget "IrodoriiOS" */;
+			buildPhases = (
+				AA7990876DFED27D9A16B7288EB5AC5F /* Sources */,
+				1CDCB8A8084C3101766B9186DC8EEC37 /* Frameworks */,
+				868A8464579A2F339C7ADE3B15C5877E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IrodoriiOS;
+			packageProductDependencies = (
+				94BE968DF4807ADBDADAFA50D523191D /* IrodoriTTS */,
+				CF5B1202FB398794A6C531F31F975EE0 /* IrodoriSpeechCpp */,
+			);
+			productName = IrodoriiOS;
+			productReference = 996F8BC73ED902D17C6EB65342A21592 /* IrodoriiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2372886C204B57C2BC404A6947F65C75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 3E3C5A3799CBC33FFFA812C4744EA234 /* Build configuration list for PBXProject "IrodoriComparison" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BEDC80A84E7FB73EBE9C660858EF75D;
+			minimizedProjectReferenceProxies = 0;
+			packageReferences = (
+				F0D520A4AB300CDEB235A425E41D0134 /* XCLocalSwiftPackageReference ".." */,
+				1C5C24EEA50DEF91E0518A7059ADA0A7 /* XCLocalSwiftPackageReference "IrodoriSpeechCpp" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F624B85B0E71D0AB35A02BD1C71675FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FC9D7E8B5ECECF29FF9D9366B0F5DA6 /* IrodoriiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		868A8464579A2F339C7ADE3B15C5877E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D372F38031319F5010C14472A379068 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA7990876DFED27D9A16B7288EB5AC5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FCF9AAA90433DFFBCDCFCA1FDB73B7D /* ContentView.swift in Sources */,
+				67EE07E289677BB3CB097AE327225F47 /* PCMPlayer.swift in Sources */,
+				1D7A36FF79F6F019D01E14762D7C9775 /* RecognitionPanel.swift in Sources */,
+				573A18EA02243E24EB00836C8747A138 /* SampleApp.swift in Sources */,
+				7526BC251F894FEA80052EAE11900C2E /* SampleModel.swift in Sources */,
+				923EE49DD3D8805CDA0E569746D5CB88 /* SampleRecognition.swift in Sources */,
+				B1B664B0F62865C9E7BD2CA392370B2D /* SynthesisTrial.swift in Sources */,
+				A5577D3346EF890FC485E5EE5A64591A /* ComparisonSmoke.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		09F886BCCAF695B4E988364B16AAC155 /* Diagnostics */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Diagnostics;
+		};
+		0B7181568DE61EAB0192824F9FEE1E37 /* Diagnostics */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Irodori TTS";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "音声認識のお試しと、参照音声として自分の声を録音します。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.example.irodori.comparison.ios;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) IRODORI_SAMPLE_DIAGNOSTICS";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Diagnostics;
+		};
+		0CC21F9CB91DE4061EE851957E52509F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Irodori TTS";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "音声認識のお試しと、参照音声として自分の声を録音します。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.example.irodori.comparison.ios;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2072BC967630530812EB6346C91D3416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D88CDBBC841DD2B8DBD57B3F6E2A5709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ED3B534BB39DE99B71026A92E6395C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Irodori TTS";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "音声認識のお試しと、参照音声として自分の声を録音します。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.example.irodori.comparison.ios;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18F3FDCCECAE6579922D3AA3115B0A51 /* Build configuration list for PBXNativeTarget "IrodoriiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CC21F9CB91DE4061EE851957E52509F /* Release */,
+				ED3B534BB39DE99B71026A92E6395C1D /* Debug */,
+				0B7181568DE61EAB0192824F9FEE1E37 /* Diagnostics */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E3C5A3799CBC33FFFA812C4744EA234 /* Build configuration list for PBXProject "IrodoriComparison" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2072BC967630530812EB6346C91D3416 /* Debug */,
+				D88CDBBC841DD2B8DBD57B3F6E2A5709 /* Release */,
+				09F886BCCAF695B4E988364B16AAC155 /* Diagnostics */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		1C5C24EEA50DEF91E0518A7059ADA0A7 /* XCLocalSwiftPackageReference "IrodoriSpeechCpp" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/IrodoriSpeechCpp;
+		};
+		F0D520A4AB300CDEB235A425E41D0134 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		94BE968DF4807ADBDADAFA50D523191D /* IrodoriTTS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0D520A4AB300CDEB235A425E41D0134 /* XCLocalSwiftPackageReference ".." */;
+			productName = IrodoriTTS;
+		};
+		CF5B1202FB398794A6C531F31F975EE0 /* IrodoriSpeechCpp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C5C24EEA50DEF91E0518A7059ADA0A7 /* XCLocalSwiftPackageReference "IrodoriSpeechCpp" */;
+			productName = IrodoriSpeechCpp;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2372886C204B57C2BC404A6947F65C75 /* Project object */;
+}

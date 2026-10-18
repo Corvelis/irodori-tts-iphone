@@ -1,0 +1,67 @@
+{
+  "format": "irodori-speechcpp-runtime-v1",
+  "archive": "Packages/IrodoriSpeechCpp/Artifacts/SpeechCpp.xcframework.zip",
+  "bytes": 4580205,
+  "sha256": "e884f25113d3e0531572b9f9f9bc005585570e4a386047d6586a4a7371d89b38",
+  "speechVersion": "0.8.10",
+  "speechRevision": "a72f1bbedd50e293d5b3f4c2bf0fb44ec003227d",
+  "ggmlRevision": "a655cf6910770404213bc338e622cd82b08ca277",
+  "xcode": [
+    "Xcode 27.0",
+    "Build version 27A266a"
+  ],
+  "sourceFiles": {
+    "Packages/IrodoriSpeechCpp/Scripts/build-runtime.sh": "1dee2816acf01e4b77ee56a74a8a51b0116701ddbfcd8389fae4d1002251d301",
+    "Scripts/package_speech_runtime.py": "c8c492761e5c5995e8b208731a4c2c03030baa65d305d9c385f7631c32caba8f",
+    "Packages/IrodoriSpeechCpp/Scripts/Patches/patch_cpu_idle.py": "8bc5ee0e8aa640daed4a8469b90a9d2bee87c90631ad0503f97c098aaffd8313",
+    "Packages/IrodoriSpeechCpp/Scripts/Patches/patch_metal.py": "dc1b41d708ba513c8a691c6fff3aec5bbc1dbcad80ae4cd08687b060bd8a885e",
+    "Packages/IrodoriSpeechCpp/Scripts/Patches/patch_mobile_memory.py": "91c21885b4b74f99ef8f785707e0ebde165bd4d1066538ff77f0224c22a90d47",
+    "Packages/IrodoriSpeechCpp/Scripts/Patches/patch_speech_tts.py": "928b68e2f678210ddd781036b14df293d4fa5f436c71418551d0be00c0e59b26"
+  },
+  "files": {
+    "SpeechCpp.xcframework/Info.plist": {
+      "bytes": 1161,
+      "sha256": "8cff89858bce7da90ef75fc13f5a2dc4b7eb6f395e387fd39f875326b7ba9f58"
+    },
+    "SpeechCpp.xcframework/ios-arm64-simulator/SpeechCpp.framework/Headers/SpeechCppBuild.h": {
+      "bytes": 172,
+      "sha256": "898c5ce3e0817788a6f68c9ce9295beede6e2242c255bd56805982c1b9cb9d8e"
+    },
+    "SpeechCpp.xcframework/ios-arm64-simulator/SpeechCpp.framework/Headers/speech.h": {
+      "bytes": 67677,
+      "sha256": "78ae8d7a60d185ff74cfc8d503d8aec57431cb32827fec0e50e5273f4d1e8c56"
+    },
+    "SpeechCpp.xcframework/ios-arm64-simulator/SpeechCpp.framework/Info.plist": {
+      "bytes": 662,
+      "sha256": "45d58a478f157d896f359bb99c28591406bf350111cd98f05f72894de0b5c78f"
+    },
+    "SpeechCpp.xcframework/ios-arm64-simulator/SpeechCpp.framework/Modules/module.modulemap": {
+      "bytes": 71,
+      "sha256": "38051ca696adb66e304dd5ec5316a9129065947d00f41accb799c1793989b6f2"
+    },
+    "SpeechCpp.xcframework/ios-arm64-simulator/SpeechCpp.framework/SpeechCpp": {
+      "bytes": 8716296,
+      "sha256": "b616c954ff9c50b7a325250c241eca74dca133bbf798f03742efac024b9ec2f2"
+    },
+    "SpeechCpp.xcframework/ios-arm64/SpeechCpp.framework/Headers/SpeechCppBuild.h": {
+      "bytes": 172,
+      "sha256": "898c5ce3e0817788a6f68c9ce9295beede6e2242c255bd56805982c1b9cb9d8e"
+    },
+    "SpeechCpp.xcframework/ios-arm64/SpeechCpp.framework/Headers/speech.h": {
+      "bytes": 67677,
+      "sha256": "78ae8d7a60d185ff74cfc8d503d8aec57431cb32827fec0e50e5273f4d1e8c56"
+    },
+    "SpeechCpp.xcframework/ios-arm64/SpeechCpp.framework/Info.plist": {
+      "bytes": 655,
+      "sha256": "389c0514911cf9218b2c76611e32d15cfdaa9a371c4e73f4638c72bcd69a36c7"
+    },
+    "SpeechCpp.xcframework/ios-arm64/SpeechCpp.framework/Modules/module.modulemap": {
+      "bytes": 71,
+      "sha256": "38051ca696adb66e304dd5ec5316a9129065947d00f41accb799c1793989b6f2"
+    },
+    "SpeechCpp.xcframework/ios-arm64/SpeechCpp.framework/SpeechCpp": {
+      "bytes": 8583192,
+      "sha256": "03d084a5084a14298f0d7800904c1a3bb07e6a450622f6fe33d889e402d03f62"
+    }
+  }
+}

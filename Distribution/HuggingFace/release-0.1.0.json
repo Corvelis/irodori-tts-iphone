@@ -1,0 +1,11 @@
+{
+  "format": "irodori-coreml-release-v1",
+  "version": "0.1.0",
+  "codeTag": "v0.1.0",
+  "codeRepository": "https://github.com/Corvelis/irodori-tts-coreml",
+  "modelRepository": "https://huggingface.co/AILogDev/Irodori-TTS-v4.1-Small-MF-CoreML",
+  "modelCommit": "b02a670f0cb41c382844672fa8f0f03b3b9b8082",
+  "manifestURL": "https://huggingface.co/AILogDev/Irodori-TTS-v4.1-Small-MF-CoreML/resolve/b02a670f0cb41c382844672fa8f0f03b3b9b8082/manifest.json",
+  "manifestSha256": "f98e77d857c20e977358ec9c9d513721b37e1af0d7e12359c05de26c90ae7186",
+  "modelBundleBytesIncludingManifest": 2991687169
+}

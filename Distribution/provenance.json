@@ -1,0 +1,155 @@
+{
+  "format": "irodori-coreml-provenance-v1",
+  "bundleVersion": "0.1.0",
+  "runtimeVersion": "0.1.0",
+  "upstreamSources": {
+    "format": "irodori-conversion-sources-v1",
+    "upstreamCode": {
+      "repository": "https://github.com/Aratako/Irodori-TTS.git",
+      "revision": "89f9d8fbd4d51ea019867ee1197725ede1df13c5"
+    },
+    "repositories": [
+      {
+        "id": "raratu/Onsei-iOS-Models",
+        "revision": "158b33fdb7fe95753922586c76bc8640feafd897",
+        "destination": "onnx",
+        "files": [
+          {
+            "path": "v4.1-small-mf/config.json",
+            "destination": "config.json",
+            "bytes": 2178,
+            "sha256": "d892d41544af570725846443c091cebb8bf7cfd687153d376128e05e58e665ee"
+          },
+          {
+            "path": "v4.1-small-mf/context_kv.onnx",
+            "destination": "context_kv.onnx",
+            "bytes": 220370315,
+            "sha256": "e2a0851dab34612e1676a81316b6bc0de0ded6de27c78b8a740d6338c229adb3"
+          },
+          {
+            "path": "v4.1-small-mf/dacvae_decode.onnx",
+            "destination": "dacvae_decode.onnx",
+            "bytes": 261400162,
+            "sha256": "48f55372b800130ce3f56895501fcb154bac486a9ac805da1c39ccd06e2d1e48"
+          },
+          {
+            "path": "v4.1-small-mf/dacvae_encode.onnx",
+            "destination": "dacvae_encode.onnx",
+            "bytes": 109452758,
+            "sha256": "3ccc52d3a5b7af5a7f2ade7f187e277c6f7d457b609db2206ea25b8956b34169"
+          },
+          {
+            "path": "v4.1-small-mf/duration.onnx",
+            "destination": "duration.onnx",
+            "bytes": 87172678,
+            "sha256": "b807f0e9a3e86bce4fd4324db6da2ded1627f6af3ed155b918e249f2fde50809"
+          },
+          {
+            "path": "v4.1-small-mf/speaker_encoder.onnx",
+            "destination": "speaker_encoder.onnx",
+            "bytes": 242880837,
+            "sha256": "ecfa3a47f0a5bde19a4fcdca46d27fe51da97fbf68897476dca313017931945f"
+          },
+          {
+            "path": "v4.1-small-mf/text_encoder.onnx",
+            "destination": "text_encoder.onnx",
+            "bytes": 1272933729,
+            "sha256": "961efbf4b01e47114e75b62210f29db1568acf244308c7b8657c245061fc2f39"
+          },
+          {
+            "path": "v4.1-small-mf/tokenizer/tokenizer.json",
+            "destination": "tokenizer/tokenizer.json",
+            "bytes": 6718495,
+            "sha256": "6a0734cf21c802169defaffe719bc2ef12bb9d0be37e54b61ed27aa89394723d"
+          },
+          {
+            "path": "v4.1-small-mf/tokenizer/tokenizer_config.json",
+            "destination": "tokenizer/tokenizer_config.json",
+            "bytes": 668,
+            "sha256": "d229a271c64de1a7939d20d3665498e873fa91d5ee2edf135d73ec752cb9c9d3"
+          }
+        ]
+      },
+      {
+        "id": "Aratako/Irodori-TTS-v4.1-Small-MF",
+        "revision": "ccc78f5d480b6e51b69b2d5042a14c4da04fea6e",
+        "destination": "checkpoint",
+        "files": [
+          {
+            "path": "model.safetensors",
+            "destination": "model.safetensors",
+            "bytes": 3093131788,
+            "sha256": "a3f204b3ee06058f4e639a1af38408e7e3af5b6c75176897ecb8bfaaebb4fd54"
+          }
+        ]
+      }
+    ]
+  },
+  "precision": {
+    "dit": "mixed-linear (FP16 selected linear operations; FP32 remaining operations)",
+    "auxiliary": "FP32",
+    "decoderStage0": "FP32",
+    "decoderStages1to3": "FP16"
+  },
+  "samplingSteps": 4,
+  "maxTextTokens": 256,
+  "maxLatentFrames": 768,
+  "referenceSampleRate": 48000,
+  "output": {
+    "sampleRate": 48000,
+    "channels": 1,
+    "format": "PCM16"
+  },
+  "runtimeBackends": [
+    "CoreML"
+  ],
+  "containsStandardDiT": false,
+  "containsONNX": false,
+  "containsReferenceAudio": false,
+  "conversionRecipe": "Conversion/convert_all.py in the code repository",
+  "licenseReview": {
+    "path": "license-review.json",
+    "humanReadable": "LICENSE_REVIEW.md",
+    "clarification": "https://huggingface.co/facebook/dacvae-watermarked/discussions/1",
+    "componentLicenses": [
+      "MIT",
+      "Apache-2.0"
+    ]
+  },
+  "distribution": {
+    "modelRepositoryId": "AILogDev/Irodori-TTS-v4.1-Small-MF-CoreML",
+    "modelRepository": "https://huggingface.co/AILogDev/Irodori-TTS-v4.1-Small-MF-CoreML",
+    "codeRepository": "https://github.com/Corvelis/irodori-tts-coreml",
+    "codeTag": "v0.1.0"
+  },
+  "reviewedArtifactsLockSha256": "6e096ec3a063658ef69693c0b23874cbf5cc095bc69ed2e3fdf8cc33111d4c59",
+  "watermarking": {
+    "algorithm": "AudioSeal",
+    "defaultEnabled": true,
+    "identifier": 18770,
+    "precision": "float32",
+    "upstream": {
+      "format": "irodori-audioseal-sources-v1",
+      "implementation": {
+        "package": "audioseal",
+        "version": "0.1.4",
+        "wheelSha256": "e1a36741fadeae3b71d2891ed0639a262f0924b6615be737e005dc629f470fae",
+        "repository": "https://github.com/facebookresearch/audioseal",
+        "license": "MIT"
+      },
+      "repository": "facebook/audioseal",
+      "revision": "3c19eba53390776cf2cc9ed5f6c9ac67ce72ecba",
+      "files": [
+        {
+          "filename": "generator_base.pth",
+          "sha256": "7a845b5fbe9364a63a3909d8ab3fe064d13a76ae4c2e983573e08c69b7b51748"
+        },
+        {
+          "filename": "detector_base.pth",
+          "sha256": "8a78e8a83584113523e161fc599fcab10fd0e94c04d2eb9d2fa1e9ec91ab69d9"
+        }
+      ]
+    },
+    "metadata": "audioseal.json"
+  }
+}
